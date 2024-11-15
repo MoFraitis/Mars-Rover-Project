@@ -24,7 +24,7 @@ class InstructionParserTest {
         assertEquals(input1.length(), result1.size());
 
         assertEquals(Instruction.M, result2.get(1));
-        assertEquals(input2.length() -4, result2.size()); //4 whitespaces
+        assertEquals(input2.length() - 4, result2.size()); //4 whitespaces
     }
 
     @DisplayName("throws an InputMismatchException when passed an invalid input")
@@ -42,11 +42,10 @@ class InstructionParserTest {
 //            System.out.println(e.getMessage());
 //        }
 
-        assertThrows(InputMismatchException.class, ()-> InstructionParser.parseInput(input1));
-        assertThrows(InputMismatchException.class, ()-> InstructionParser.parseInput(input2));
-        assertThrows(InputMismatchException.class, ()-> InstructionParser.parseInput(input3));
-        assertThrows(InputMismatchException.class, ()-> InstructionParser.parseInput(input4));
-        assertThrows(InputMismatchException.class, ()-> InstructionParser.parseInput(input5));
-
+        assertThrows(InputMismatchException.class, () -> InstructionParser.parseInput(input1));
+        assertThrows(InputMismatchException.class, () -> InstructionParser.parseInput(input2));
+        assertThrows(InputMismatchException.class, () -> InstructionParser.parseInput(input3));
+        assertThrows(InputMismatchException.class, () -> InstructionParser.parseInput(input4));
+        assertThrows(InputMismatchException.class, () -> InstructionParser.parseInput(input5));
     }
 }
