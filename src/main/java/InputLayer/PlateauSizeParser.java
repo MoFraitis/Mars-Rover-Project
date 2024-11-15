@@ -9,7 +9,7 @@ public class PlateauSizeParser {
     public static PlateauSize parseInput(String input) {
         String inputWhiteSpacesRemoved = input.replaceAll(" ", "");
 
-        if (inputWhiteSpacesRemoved.matches("\\d+")) {
+        if (inputWhiteSpacesRemoved.matches("\\d+") && inputWhiteSpacesRemoved.length() == 2) {
             String[] plateauSizeArray = inputWhiteSpacesRemoved.split("");
             int x = Integer.parseInt(plateauSizeArray[0]);
             int y = Integer.parseInt(plateauSizeArray[1]);
