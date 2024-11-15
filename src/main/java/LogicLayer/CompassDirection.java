@@ -1,3 +1,5 @@
+package LogicLayer;
+
 public enum CompassDirection {
     N,
     E,
