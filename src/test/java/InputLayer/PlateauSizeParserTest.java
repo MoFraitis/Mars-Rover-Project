@@ -62,5 +62,4 @@ class PlateauSizeParserTest {
         assertThrows(InputMismatchException.class, ()-> PlateauSizeParser.parseInput(input2));
         assertThrows(InputMismatchException.class, ()-> PlateauSizeParser.parseInput(input3));
     }
-
 }
