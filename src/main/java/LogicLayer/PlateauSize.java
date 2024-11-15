@@ -1,3 +1,5 @@
+package LogicLayer;
+
 public class PlateauSize {
     private final int x;
     private final int y;
