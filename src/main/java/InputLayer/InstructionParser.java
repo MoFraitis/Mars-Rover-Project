@@ -9,7 +9,7 @@ import java.util.List;
 public class InstructionParser {
 
     public static List<Instruction> parseInput(String input) {
-        String inputWhiteSpacesRemoved = input.replaceAll(" ", "");
+        String inputWhiteSpacesRemoved = input.replaceAll(" ", "").toUpperCase();
 
         if(inputWhiteSpacesRemoved.matches("^[LRM]+$")) {
             List<Instruction> instructions = new ArrayList<>();
