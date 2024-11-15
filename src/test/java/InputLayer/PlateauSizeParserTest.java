@@ -51,6 +51,16 @@ class PlateauSizeParserTest {
         assertEquals(3, result4.getY());
     }
 
+    @DisplayName("throws an InputMismatchException when passed an invalid input")
+    @Test
+    void parseInputTest_InvalidInput() {
+        String input1 = "-56";
+        String input2 = "ABc123";
+        String input3 = "-4-31";
 
+        assertThrows(InputMismatchException.class, ()-> PlateauSizeParser.parseInput(input1));
+        assertThrows(InputMismatchException.class, ()-> PlateauSizeParser.parseInput(input2));
+        assertThrows(InputMismatchException.class, ()-> PlateauSizeParser.parseInput(input3));
+    }
 
 }
